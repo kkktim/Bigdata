@@ -25,7 +25,7 @@ if not os.path.exists(dir):
 
 
 # 파일 생성 및 데이터 파싱
-fname = "{:%Y-%m-%d-%H-%M.csv}".format(datetime.now())
+fname = "{:Weather_%Y_%m_%d_%H_%M.csv}".format(datetime.now())
 file = open(dir+'/'+fname, 'w', encoding='utf-8')
 
 trs = dom.select('#weather_table > tbody > tr')
